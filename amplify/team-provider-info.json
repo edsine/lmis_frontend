@@ -17,6 +17,9 @@
           "appId": "d2e834sq2st7jz",
           "type": "cicd"
         }
+      },
+      "api": {
+        "lmisfrontend": {}
       }
     }
   }

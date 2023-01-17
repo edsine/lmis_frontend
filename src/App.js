@@ -30,7 +30,15 @@ import IndicatorDetails from './components/pages/IndicatorDetails';
 import IndicatorDetailsMeta from './components/pages/IndicatorDetailsMeta';
 
 
-
+import "@aws-amplify/ui-react/styles.css";
+// import {
+//   withAuthenticator,
+//   Button,
+//   Heading,
+//   Image,
+//   View,
+//   Card,
+// } from "@aws-amplify/ui-react";
 
 function App() {
   
@@ -67,4 +75,4 @@ function App() {
   );
 }
 
-export default App;
+export default  App;
