@@ -20,15 +20,65 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
+    },
+    "strapibackend": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "lmislambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "lmislambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
+    },
     "amplifyhosting": {
       "service": "amplifyhosting",
       "type": "cicd"
     }
   },
   "parameters": {
+    "AMPLIFY_function_lmislambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lmislambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_lmislambda_lmisenv": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lmislambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_lmislambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lmislambda"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
