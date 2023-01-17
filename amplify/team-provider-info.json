@@ -22,5 +22,38 @@
         "lmisfrontend": {}
       }
     }
+  },
+  "develop": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lmisfrontend-develop-62244-authRole",
+      "UnauthRoleArn": "arn:aws:iam::295874690291:role/amplify-lmisfrontend-develop-62244-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::295874690291:role/amplify-lmisfrontend-develop-62244-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lmisfrontend-develop-62244-deployment",
+      "UnauthRoleName": "amplify-lmisfrontend-develop-62244-unauthRole",
+      "StackName": "amplify-lmisfrontend-develop-62244",
+      "StackId": "arn:aws:cloudformation:us-east-1:295874690291:stack/amplify-lmisfrontend-develop-62244/fc76a130-9626-11ed-a524-0e2d63b4b389",
+      "AmplifyAppId": "d3szeg1gp4cio3"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3szeg1gp4cio3",
+          "type": "cicd"
+        },
+        "S3AndCloudFront": {}
+      },
+      "function": {
+        "lmislambda": {
+          "lmisenv": "200",
+          "deploymentBucketName": "amplify-lmisfrontend-develop-62244-deployment",
+          "s3Key": "amplify-builds/lmislambda-6c644a55784b56417134-build.zip"
+        }
+      },
+      "api": {
+        "lmisfrontend": {},
+        "strapibackend": {}
+      }
+    }
   }
 }

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/dash": {
+      "name": "/dash",
+      "lambdaFunction": "lmislambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

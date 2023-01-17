@@ -30,7 +30,7 @@ import IndicatorDetails from './components/pages/IndicatorDetails';
 import IndicatorDetailsMeta from './components/pages/IndicatorDetailsMeta';
 
 
-import "@aws-amplify/ui-react/styles.css";
+// import "@aws-amplify/ui-react/styles.css";
 // import {
 //   withAuthenticator,
 //   Button,
@@ -69,6 +69,7 @@ function App() {
           <Route exact path="/SkillBank" component={SkillBank} />
           <Route exact path="/trends" component={Trends} />
         </Switch>
+      
         <Footer/>
       </>
     </Router>
